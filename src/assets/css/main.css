@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'PingFang SC','Microsoft YaHei','SimHei','Arial','SimSun'
+}
+html,
+body,
+#app {
+    width:100%;
+    min-width: 1220px;
+    min-height: 100%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+    /* transition: 0.3s ease all; */
+}
+a:hover {
+    text-decoration: none;
+}
+/* ol,
+ul,
+li {
+    list-style: none;
+} */
+input,
+button,
+textarea {
+    outline: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+/* img {
+    vertical-align: middle;
+    max-width: 100%;
+} */
+
+/*  */
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* 标准语法 */
+}
+.section {
+    width: 1200px;
+    margin: 0 auto;
+}
+.sectionContent {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.navbar .router_active {
+    background: #feae03;
+}
+.navbar_mobile .router_active {
+    text-decoration: underline;
+}
+
+/* el-pagination */
+.el-pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.el-pagination button, .el-pagination li {
+    height: 40px!important;
+    line-height:40px!important;
+    min-width: 40px!important;
+    font-weight: normal;
+    font-size: 14px!important;
+    border-radius: 0!important;
+    border: 1px solid #dcdcdc!important;
+    color: #666!important;
+    background: #fff!important;
+    margin: 0 15px 0 0!important;
+    padding: 0!important;
+    transition: all 0.3s ease;
+    border-radius: 4px!important;
+}
+.el-pagination li.active {
+    /* background: #005ca1!important;
+    border-color: #005ca1!important; */
+    /* background: linear-gradient(to right,#25a9e0,#187aba)!important; */
+    background: #0050f4!important;
+    border: 1px solid #0050f4!important;
+    color: #FFFFFF!important;
+}
+.el-pagination button {
+    padding: 0 10px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+    width: 40px!important;
+}
+.el-pagination button.btn-next {
+    margin-right: 0!important;
+}
+.el-pagination .el-pagination__total {
+    margin-left: 15px;
+}
+.el-pagination .btn-prev:disabled, .el-pagination .btn-next:disabled {
+    color: #dcdcdc!important;
+}
+.el-pagination button span {
+    font-size: 14px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+}
+.el-pagination .el-pagination__total {
+    font-size: 14px!important;
+    color: #005ca1;
+    height: 40px!important;
+    line-height: 40px!important;
+}
+
+/* el-pagination-mobile */
+.el-pagination-mobile.el-pagination {
+    padding: 0;
+    white-space: normal;
+}
+.el-pagination-mobile.el-pagination button, .el-pagination-mobile.el-pagination li {
+    height: 0.7rem!important;
+    line-height: 0.7rem!important;
+    min-width: 0.7rem!important;
+    font-size: 0.28rem!important;
+    margin: 0 0.25rem 0.2rem 0!important;
+}
+.el-pagination-mobile.el-pagination button {
+    padding: 0 0.1rem!important;
+}
+.el-pagination-mobile.el-pagination button.btn-next {
+    margin-right: 0!important;
+}
+.el-pagination-mobile.el-pagination .el-pagination__total {
+    font-size: 0.28rem!important;
+    height: 0.7rem!important;
+    line-height: 0.7rem!important;
+    margin-left: 0.35rem;
+    margin-right: 0!important;
+}
+.titlesMargin {
+    margin: 15px 0;
+}
+ul {
+    padding-left:20px ;
+    font-size: 16px;
+    line-height: 28px;
+}
+li::marker{
+    color: #197cbb;
+}
+/* toast */
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 150px;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.toast.active {
+    opacity: 1;
+}
+.toast i {
+    margin-right: 5px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.padding {
+    padding: 20px 50px;
+}
+.width {
+    width: 100%;
+}
+.heightOne {
+    height: 620px;
+    margin-right: 10px;
+}
+.heightTwo {
+    height: 260px;
+    /* margin-right: 10px; */
+}
+
+/* 为滚动区域添加一个类名，如 .custom-scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* 水平滚动条的宽度 */
+  height: 6px; /* 垂直滚动条的高度 */
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #999999; /* 滚动条的颜色 */
+  border-radius: 5px; /* 滚动条的圆角 */
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* 滚动条轨道的颜色 */
+}
+ 
+/* .el-menu--horizontal .el-menu .el-menu--popup {
+    text-align: center!important;
+    padding: 15px 0;
+} */
+/* .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
+    text-align: center!important;
+    font-size: 20px;
+    color: #333333;
+}
+.el-menu--horizontal .el-menu .el-menu-item.is-active, .el-menu--horizontal .el-menu .el-submenu.is-active>.el-submenu__title {
+   display: inline-block;
+   background-image: linear-gradient(to right, #25a9e0, #187aba);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-align: center;
+} */
+/* .el-menu--popup {
+    min-width: 240px;
+} */
+/* 移动端 */
+/* @media (max-width: 768px) {
+    body {
+        font-size: 0.28rem;
+        padding-right: 0;
+    }
+    html, body, #app, .home {
+        min-width: auto!important;
+    }
+    .section {
+        width: 100%;
+        margin: 0;
+        padding: 0 0.2rem;
+    }
+    .toast {
+        min-width: 2.5rem;
+        font-size: 0.29rem;
+        padding: 0.2rem 0.35rem;
+        border-radius: 5px;
+    }
+    .toast i {
+        margin-right: 5px;
+    }
+    .el-message {
+        width: 80%!important;
+        justify-content: center;
+    }
+    ul {
+        padding-left:20px ;
+        font-size: .3rem;
+        line-height: .5rem;
+        
+    }
+    li::marker{
+        color: #197cbb;
+    }
+    .titlesMargin {
+        margin: .2rem 0;
+    }
+    .padding {
+        padding: 0;
+    }
+    .heightOne {
+        height: 6rem;
+        margin-right: .1rem;
+    }
+    .heightTwo {
+        height: 2.5rem;
+    }
+} */

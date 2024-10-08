@@ -1,0 +1,20 @@
+/* @font-face {
+    font-family: 'HarmonyOS_Sans_SC_Medium';
+    src: url('./HarmonyOS_Sans_Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'SourceHan_Sans_SC_VF';
+    src: url('https://file-cdn.cdinfotech.top/uploads/programimg/SourceHanSansSC-VF.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto_Medium';
+    src: url('./RobotoMedium.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
